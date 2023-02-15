@@ -1,0 +1,164 @@
+body {
+	font-family: Biryani;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #000;
+
+	max-width: 960px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.menu {
+	background-color: #F9CFDF;
+	width: 400px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transform: translateX(-100%);
+
+	z-index: 2;
+	transition: transform 0.5s ease;
+}
+
+.open {
+	transform: translateX(0);
+}
+
+nav {
+	position: absolute;
+	left: 65px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+nav a {
+	font-size: 32px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.menu-toggle {
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	z-index: 3;
+}
+
+.natural {
+	padding-right: 260px;
+	position: relative;
+}
+
+.natural h2 {
+	font-size: 64px;
+	line-height: 1.125;
+	font-weight: 700;
+
+	/* position: absolute;
+	right: 0;
+	top: 50%;
+	width: 360px; */
+}
+
+.natural .copy {
+	/* font-size: 64px;
+	line-height: 1.125;
+	font-weight: 700; */
+	
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 360px;
+	transform: translateY(-50%)
+}
+
+.one-thing {
+	padding-left: 360px;
+	position: relative;
+}
+
+.one-thing .copy {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 480px;
+}
+
+.one-thing h3 {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.one-thing p {
+	font-size: 32px;
+	font-weight: 100;
+}
+
+section {
+	margin-bottom: 60px;
+}
+
+.lookbook {
+	padding: 220px 20px 184px 20px;
+	background-image: url(image_3.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+
+.lookbook h2 {
+	font-size: 64px;
+	color: #FFF;
+	font-weight: 700;
+}
+
+.natural img, 
+.one-thing {
+	transition: transform 0.5s ease;
+}
+
+.natural img:hover {
+	transform: rotate(-5deg);
+}
+
+.natural:hover h2 {
+	transform: scale(1.15);
+}
+
+.one-thing .copy,
+.one-thing img {
+	transition: transform 0.5s ease;
+}
+
+.one-thing:hover .copy {
+	transform: scale(1.1) translateX(20px);
+}
+
+.one-thing:hover img {
+	transform: rotate(10deg);
+}
+
+.lookbook h2 {
+	transition: all 0.5s ease;
+}
+
+.lookbook:hover h2 {
+	transform: scale(0.8);
+	color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
