@@ -1,0 +1,177 @@
+body {
+  font-family: 'Work Sans';
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #000000;
+  padding-top: 104px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  /*overflow: hidden; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  /* flexbox time! */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* z-index allows us to control the order
+  of elements stacking on top of each other.
+  It matters when using fixed/absolute positioning
+  b/c elements get taken on to separate layers
+   */
+  z-index: 3;
+}
+
+header h1 {
+  /* float: left*/
+  width: 64px;
+}
+
+/* header nav {
+  * float: right; 
+   * margin-top: 20px*/
+
+header nav a {
+  margin-left: 10px;
+  transition: border 0.3s 1s ease-in;
+  border-bottom: solid 2px rgba(0,0,0,0);
+  padding-bottom: 3px;
+}
+
+header nav a:hover {
+  border-color: #555;
+
+}
+
+header nav a.selected {
+  border-color: #fff;
+}
+
+.photos {
+  /*   text-align: center; */
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.photo {
+  /*   display: inline-block; */
+  width: 300px;
+  margin: 10px;
+  /*    by using "position: relative" on the parent photo element, 
+ * our overaly will be positioned in relation to it */
+  position: relative;
+}
+
+.photo img {
+  transition: filter 0.3s;
+}
+
+.photo:hover img {
+  filter: grayscale(1);
+}
+
+.overlay {
+  /*    by using absolute postion, we can position things in relation 
+ * to the page or other parent elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.photo:hover .overlay {
+  opacity: 1;
+}
+
+.photo h2 {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.small {
+  width: 220px;
+}
+
+.large {
+  width: 400px;
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav a {
+  width: 16px;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.list {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-top: 120px;
+}
+
+.list a img {
+  opacity: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  /* pointer events will tell the browser to
+  ignore any default curser interations on
+  this image element*/
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.list a:after {
+  content: '/'
+}
+
+.list a:last-child:after {
+  content: ''
+}
+
+.list a:hover img {
+  opacity: 1;
+}
+
+
+
+
+
