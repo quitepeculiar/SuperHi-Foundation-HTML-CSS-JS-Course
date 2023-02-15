@@ -1,0 +1,244 @@
+body {
+  font-family: Playfair Display;
+  font-size: 20px;
+  line-height: 1.33;
+  background-color: #f4f4f4;
+  color: #000000;
+}
+
+header {
+  background-color: #000000;
+  color: #f4f4f4;
+  border-top: solid 5px #feea34;
+}
+
+/* We apply our flex styles to the inner container rather than the outer header element */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  width: 75px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav a {
+  display: block;
+}
+
+header nav {
+  display: flex;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.hero {
+  background-image: url(hero.jpg);
+  padding: 110px 0 120px 0;
+  background-size: cover;
+  background-position: right center;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.intro {
+  max-width: 440px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters li {
+  display: inline;
+}
+
+.show-filters {
+  display: none;
+}
+
+.filters a {
+  color: #000000;
+  font-size: 16px;
+  margin-right: 15px;
+  width: fit-content;
+}
+
+.filters .selected {
+  font-weight: 700;
+  border-bottom: solid 3px #FEEA34;
+  padding-bottom: 1px;
+}
+
+.products .container {
+  display: flex;
+  /* by default, flexbox puts everything onto the same line,
+	but by using flex-wrap, it will allow us to have multiple rows */
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 33.333%;
+  /* we use a relative position so that our overlay latches on and 
+  only positions itself inside the context of the product element */
+  position: relative;
+}
+
+.products {
+  margin-bottom: 40px;
+}
+
+/* 
+1. Hide the overlay initially
+2. Position the overlay to cover the image
+3. Translucent yellow background
+4. Position the title and price at the top and bottom left
+ */
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  background-color: rgba(254, 234, 52, 0.7);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+
+.product h4, .product p {
+  font-weight: 700;
+}
+
+.product h4 {
+  font-size: 18px;
+}
+
+.product p {
+  font-size: 36px;
+  /* Using absolute positioning will ignore padding and other things */
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+/* Nav menu show/hide filters */
+
+.filters .show-filters {
+  color: #BFBFB7;
+}
+
+/* Breakpoint for media queries*/
+
+@media (max-width: 860px) {
+
+  .hero {
+    padding: 55px 0 60px 0;
+  }
+
+  .product {
+    width: 50%;
+  }
+
+  .container {
+    padding: 0 40px 0 40px;
+  }
+
+  .products {
+    margin-bottom: 60px;
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  .hero {
+    background-image: none;
+    background-color: #BFBFB7;
+    padding: 30px 0 30px 0;
+  }
+
+  .intro {
+    max-width: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .intro h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .intro p {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .product {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .filters a {
+    display: block;
+    width: fit-content;
+  }
+
+  .filters li, .show-filters {
+    display: block;
+  }
+
+  .filters li {
+    margin-bottom: 3px;
+  }
+
+  .show-filters {
+    margin-bottom: 5px;
+  }
+
+  .filters-list {
+    display: none;
+  }
+
+}
+
+@media (min-width: 480px) {
+  .filters-list {
+    display: block !important;
+  }
+}
+
