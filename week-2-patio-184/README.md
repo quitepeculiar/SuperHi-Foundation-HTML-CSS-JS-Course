@@ -1,8 +1,10 @@
 ### SuperHi: Foundation HTML, CSS + JavaScript
 
-# Chapter 1: Sally Hart
+# Chapter 2: Patio
 
-This is a simple website showcasing HTML and CSS and using the parallax effect. This is the first project on SuperHi's Foundation course.
+This is a static front page for a nonexistant business in London.
+
+It was put together with basic HTML and CSS to showcase a single-column website and to use media queries in order to make it responsive.
 
 I previously had these projects in my GitHub, but they were copy/pasted into Atom directly from the SuperHi Editor, so they didn't render properly. 😓 Also, each chapter/project had its own GitHub repository.
 

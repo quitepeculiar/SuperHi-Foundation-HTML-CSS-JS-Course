@@ -1,0 +1,119 @@
+body {
+  font-family: "Lora";
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  
+  background-image: url("background.svg");
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  padding-top: 40px;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+nav {
+  background-color: #f05d5d;
+  padding: 20px 40px 20px 40px; 
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+/* these are the styles that get applied when hovering over each nav link */
+nav a:hover {
+  color: #5000ff;
+  border-bottom: solid 2px #ffffff;
+}
+
+section {
+  background-color: #5000ff;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.image {
+  padding: 0;
+}
+
+blockquote {
+    font-size: 32px;
+  	line-height: 1.2;
+  	font-style: italic;
+  	margin-top: 40px;
+  	margin-bottom: 40px;
+}
+
+.map {
+  width: 100%;
+}
+
+.contact p {
+  margin-top: 20px;
+}
+
+.contact a {
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: solid 2px #f05d5d;
+  padding-bottom: 1px;
+}
+
+@media (max-width: 740px) {
+  
+  /* these styles will be applied to both the section and header in this way */
+  section,
+  header {
+    padding: 20px;
+  }
+  
+  nav {
+    padding: 10px 20px 10px 20px;
+  }
+  
+  h2,
+  blockquote {
+    font-size: 24px;
+  }
+  
+  body {
+    padding: 0;
+    font-size: 16px;
+  }
+  
+  nav a {
+    display: block;
+  }
+  
+  nav a:hover {
+    border: none;
+  }
+  
+  blockquote {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
