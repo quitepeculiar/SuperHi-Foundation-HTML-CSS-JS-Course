@@ -6,7 +6,7 @@ Hello!
 
 The [SuperHi Foundation HTML, CSS + JavaScript course](https://www.superhi.com/courses/html-css-javascript-foundation) was, outside of a "Programming for Non-Programmers" weekend course with General Assembly, the first course I started on after leaving full-time beer marketing back in Autumn 2020. It wasn't the first course I finished, however! 😅 After learning Python with [Code First Girls](https://codefirstgirls.com//) at the end of 2021, I didn't wind up completing the course until Autumn 2022 due to various reasons, but complete it I did!
 
-Apart from the homework. 😅 But that'll be another project to come!
+Apart from the homework. 😅 But that'll be another project to come and it will be a good opportunity to review, and possibly even riff off, while completing other courses.
 
 I have also completed SuperHi's [JavaScript for Designers](https://www.superhi.com/courses/javascript-for-designers) course, which you can also find listed in my repos. My first SuperHi course I ever started, their [Visual Design + Branding](https://www.superhi.com/courses/visual-design-and-branding) one, remains incomplete for now in favour of becoming more familiar with JavaScript currently. However, I love design and I intend to complete it at a later date.
 
